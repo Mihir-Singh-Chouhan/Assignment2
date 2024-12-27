@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#FAF6E3, #D8DBBD, #B59F78);
+}
+
+input, select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    color: #888;
+}
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 75%;
+    max-width: 600px;
+}
+
+#gender {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+#btn-div {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#prev-btn, #next-btn, #submit-btn, #refresh-btn {
+    background-color: rgb(57, 57, 220);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#prev-btn:hover, #next-btn:hover, #submit-btn:hover, #refresh-btn:hover {
+    background-color: rgb(13, 13, 242);
+    transform: translateY(5px);
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#review {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#review h3 {
+    margin-top: 0;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="step" id="step1">
+            <form id="personal-details">
+                <h2>Personal Details</h2>
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <input type="text" id="fullname" pattern="[A-Za-z\s]{3,}" minlength="3" placeholder="Enter your name" required>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                    <input type="tel" id="phone" pattern="[0-9]{10}" maxlength="10" placeholder="Enter mobile number" required>
+                    <p id="gender">Select your gender:
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female" required> Female</label>
+                        <label><input type="radio" name="gender" value="other" required> Other</label>
+                    </p>
+                    <p>Enter your age:
+                        <input type="tel" id="age" min="18" max="100" maxlength="2" required>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <div class="step" id="step2">
+            <h2>Professional Details</h2>
+            <form id="professional-details">
+                <p>Education</p>
+                <select id="education" required>
+                    <option value="">Select your education</option>
+                    <option value="Masters">PG or Above</option>
+                    <option value="UG">UG</option>
+                    <option value="Higher Secondary">12</option>
+                    <option value="High School">10</option>
+                    <option value="Below">Below 10</option>
+                </select>
+                <div class="skills">
+                    <p>Select your skills</p>
+                    <label><input type="checkbox" value="HTML & CSS"> HTML & CSS</label>
+                    <label><input type="checkbox" value="JavaScript"> JavaScript</label>
+                    <label><input type="checkbox" value="React"> React</label>
+                    <label><input type="checkbox" value="DBMS"> DBMS</label>
+                    <label><input type="checkbox" value="Java"> Java</label>
+                </div>
+                <p>Experience</p>
+                <input type="number" id="experience" min="0" max="50" placeholder="0-50 years" required>
+                <p>Current Role</p>
+                <input type="text" id="current-role" placeholder="Current Role" required>
+            </form>
+        </div>
+        <div class="step" id="step3">
+            <h2>Review & Submit</h2>
+            <div id="review"></div>
+            <button id="submit-btn">Submit</button>
+            <button id="refresh-btn">Refresh</button>
+        </div>
+        <div id="btn-div">
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
